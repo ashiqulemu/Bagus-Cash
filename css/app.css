@@ -1372,6 +1372,100 @@ body {
   width: 97%;
 }
 
+.brands {
+  background: #F7F8FA;
+}
+
+.brands .brand-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+  row-gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands .brand-container a .brand-box {
+  width: 205px;
+  height: 242px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 1px 3px 0 #0000001a,0 1px 2px 0 #0000000f;
+          box-shadow: 0 1px 3px 0 #0000001a,0 1px 2px 0 #0000000f;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+}
+
+.brands .brand-container a .brand-box .photo {
+  width: 140px;
+  height: auto;
+}
+
+.brands .brand-container a .brand-box .brand-name {
+  color: #222222;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.brands .brand-container a:hover {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 1px 13px 0 #0000001a,0 1px 2px 0 #0000000f;
+          box-shadow: 0 1px 13px 0 #0000001a,0 1px 2px 0 #0000000f;
+}
+
+.brands .brand-container a:hover .brand-box {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.brands .searchIndividual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brands .searchIndividual input {
+  background-color: white;
+  letter-spacing: 0.025em;
+  font-weight: 500;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  padding: 0px 17px;
+  border-radius: 6px 0px 0px 6px;
+  outline: none;
+  border: 1px solid #e7ecef;
+  height: 42px;
+}
+
+.brands .searchIndividual button {
+  border: 0;
+  border-radius: 0 5px 5px 0px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-right: 29px;
+  padding-left: 29px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#3d4b54), to(#1c252a));
+  background: linear-gradient(90deg, #3d4b54 0%, #1c252a 100%);
+}
+
 footer {
   background: #303E4E;
 }

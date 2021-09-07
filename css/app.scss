@@ -1166,6 +1166,79 @@ body {
 .w-97 {
   width: 97%;
 }
+.brands{
+  background:#F7F8FA;
+  .brand-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+      row-gap: 12px;
+    align-items: center; 
+    a{
+      
+      .brand-box{
+        width: 205px; 
+        height: 242px;
+        border-radius: 20px; 
+        box-shadow:  0 1px 3px 0 #0000001a,0 1px 2px 0 #0000000f;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        display: inline-block;
+        
+       .photo{
+         width: 140px;
+         height: auto;
+       }
+       .brand-name{
+        color: rgb(34, 34, 34);
+        text-transform: capitalize;
+        text-decoration: none;
+        font-weight: bold;
+       }
+      }
+      &:hover{
+        .brand-box{
+          box-shadow: none;
+        }
+        border-radius: 20px; 
+        box-shadow:  0 1px 13px 0 #0000001a,0 1px 2px 0 #0000000f;
+      }
+       
+    }
+    
+  }
+  .searchIndividual  {
+    display: flex;
+    input{
+      background-color: white;
+      letter-spacing: 0.025em;
+      font-weight: 500;
+      font-size: 15px;
+      display: flex;
+      flex: 1 1 0%;
+      padding: 0px 17px;
+      border-radius: 6px 0px 0px 6px;
+      outline: none;
+      border: 1px solid rgb(231, 236, 239);
+      height: 42px;
+    } 
+    button{
+      border: 0;
+      border-radius: 0 5px 5px 0px;
+      cursor: pointer;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      padding-right: 29px;
+      padding-left: 29px;
+      color: rgb(255, 255, 255);
+      background: linear-gradient(
+  90deg, #3d4b54 0%, #1c252a 100%);
+    }
+  }
+}
+
 
 footer {
   background:#303E4E;
