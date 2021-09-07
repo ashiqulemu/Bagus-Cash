@@ -1398,6 +1398,19 @@ body {
   }
 }
 
+@media (max-width: 451px) {
+  .brands .brand-container a {
+    width: 48%;
+  }
+}
+
+@media (max-width: 375px) {
+  .brands .brand-container a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .brands .brand-container a .brand-box {
   width: 205px;
   height: 242px;
@@ -1455,6 +1468,12 @@ body {
   outline: none;
   border: 1px solid #e7ecef;
   height: 42px;
+}
+
+@media (max-width: 375px) {
+  .brands .searchIndividual input {
+    width: 180px;
+  }
 }
 
 .brands .searchIndividual button {

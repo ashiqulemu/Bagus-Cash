@@ -1178,7 +1178,13 @@ body {
       justify-content: center; 
     }
     a{
-      
+      @media(max-width:451px) {
+        width: 48%;
+      }
+      @media(max-width:375px) {
+        width: 100%;
+        text-align: center;
+      }
       .brand-box{
         width: 205px; 
         height: 242px;
@@ -1225,6 +1231,10 @@ body {
       outline: none;
       border: 1px solid rgb(231, 236, 239);
       height: 42px;
+      @media(max-width:375px) {
+        width: 180px;
+        
+      }
     } 
     button{
       border: 0;
