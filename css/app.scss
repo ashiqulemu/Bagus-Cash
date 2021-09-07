@@ -111,7 +111,9 @@ $white:#fff;
     display: flex;
     min-height: 458px;
 
-    
+    @media(max-width:768px){ 
+      min-height: unset;
+    }
 
     .categoryList {
       min-width: 250px; 
@@ -175,7 +177,7 @@ $white:#fff;
         overflow: hidden;
         margin-top: 16px;
         height: calc(70% - 16px);
-        @media(max-width:768px){
+        @media(max-width:768px){ 
          height: 200px;
          .carousel-item{
            img{
@@ -186,6 +188,9 @@ $white:#fff;
         }
         .carousel-indicators { 
           bottom: 88px;
+          @media(max-width:768px){ 
+            bottom: 0;
+          }
         }
       }
 
@@ -200,6 +205,12 @@ $white:#fff;
           cursor: pointer;
           z-index: 10;
           top:10px;
+          margin-bottom: 0;
+         }
+         .slick-slider{
+          @media(max-width:768px){ 
+            height: 100px;
+          }
          }
          .right.slick-arrow{
           width: 16px;
@@ -208,6 +219,7 @@ $white:#fff;
           top:10px;
           cursor: pointer;
           z-index: 10;
+          margin-bottom: 0;
          }
          .slideInner{  
           &.one{
@@ -271,7 +283,7 @@ $white:#fff;
 }
 
 
-@media (min-width:768px) {
+@media (max-width:768px) {
 
   .container {
     max-width: 708px;
