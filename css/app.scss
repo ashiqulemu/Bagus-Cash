@@ -175,8 +175,16 @@ $white:#fff;
         overflow: hidden;
         margin-top: 16px;
         height: calc(70% - 16px);
-        .carousel-indicators {
-          
+        @media(max-width:768px){
+         height: 200px;
+         .carousel-item{
+           img{
+             height:200px;
+             width: 100%;
+           }
+         }
+        }
+        .carousel-indicators { 
           bottom: 88px;
         }
       }
@@ -258,7 +266,15 @@ $white:#fff;
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1320px;
+    max-width: 1240px;
+  }
+}
+
+
+@media (min-width:768px) {
+
+  .container {
+    max-width: 708px;
   }
 }
 

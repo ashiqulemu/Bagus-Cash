@@ -225,6 +225,16 @@
   height: calc(70% - 16px);
 }
 
+@media (max-width: 768px) {
+  .catSlider .main-slider-wrapper .rightSlide .topSlide {
+    height: 200px;
+  }
+  .catSlider .main-slider-wrapper .rightSlide .topSlide .carousel-item img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
 .catSlider .main-slider-wrapper .rightSlide .topSlide .carousel-indicators {
   bottom: 88px;
 }
@@ -314,7 +324,13 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1320px;
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 708px;
   }
 }
 
