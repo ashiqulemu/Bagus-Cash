@@ -1390,6 +1390,14 @@ body {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .brands .brand-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .brands .brand-container a .brand-box {
   width: 205px;
   height: 242px;

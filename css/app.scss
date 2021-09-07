@@ -1174,6 +1174,9 @@ body {
     column-gap: 12px;
       row-gap: 12px;
     align-items: center; 
+    @media(max-width:768px) {
+      justify-content: center; 
+    }
     a{
       
       .brand-box{
